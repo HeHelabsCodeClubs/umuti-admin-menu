@@ -1,6 +1,6 @@
 {
   "name": "umuti-admin-menu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"a component to render umuti admin menu\"",
   "main": "dist/index.js",
   "scripts": {
