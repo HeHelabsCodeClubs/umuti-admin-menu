@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Notifications from 'react-notify-toast';
 import { Link } from 'react-router-dom';
-// import JWT from 'jwt-client';
-// import Jumbo from '../../reusable/Jumbo';
-// import { TOKEN_KEY } from '../../../../config';
-// import Notification from './notification';
 import './style.css';
 
 class Header extends Component {
@@ -20,18 +16,7 @@ class Header extends Component {
     this.handleHamburgerIconClick = this.handleHamburgerIconClick.bind(this);
     this.customerHandleHover = this.customerHandleHover.bind(this);
     this.customerHandleLeave = this.customerHandleLeave.bind(this);
-    // this.logoutUser = this.logoutUser.bind(this);
     };
-
-    // componentWillMount() {
-    //     this.getUser();
-    // }
-
-    // logoutUser(e) {
-    //     e.preventDefault();
-    //     localStorage.removeItem(TOKEN_KEY);
-    //     window.location.replace('/');
-    // }
 
     handleHamburgerIconClick(e) {
         e.preventDefault();
@@ -46,21 +31,6 @@ class Header extends Component {
             });
         }
     }
-
-    // getUser() {
-    //     const token = JWT.remember(TOKEN_KEY);
-    //     if (token !== null) {
-    //         const public_claims = token.claim;
-    //         const user = {
-    //             username: public_claims.username,
-    //             full_names: public_claims.full_name,
-    //             email: public_claims.email,
-    //             phone: public_claims.phone
-    //         };
-
-    //         this.setState({ userData: user });
-    //     }
-    // }
     customerHandleHover () {
         this.setState({ showCustomerMenu: true });
     };
@@ -78,23 +48,6 @@ class Header extends Component {
         return(
             <div className="common-header">
                 <Notifications />
-                {/* <div className="top-panel row">
-                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset">
-                        <Link to="/dashboard"><img src={clientInfoData.data.logo} className='comp-logo' /></Link>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset">
-                        <div className="user-account">
-                            <img src="https://res.cloudinary.com/hehe/image/upload/v1535021246/Iposita/EMS_logo2.png" className='user-pic' />
-                            <span className="user-name">{userData.full_names}</span>
-                            <button
-                            className="not-icon"
-                            onClick={this.logoutUser}
-                            >Logout</button>
-                            <span><Notification /></span>
-                        </div>
-                        
-                    </div>
-                </div> */}
 
                 {/* top panel */}
 
